@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header .top {
+    background-color: #242323;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .top h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.header .top .link .l2 {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.header .top .link .l1 {
+    text-decoration: none;
+    color: #ff6f00;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.header .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+}
+
+.header .text .left {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.header .text .left h1 {
+    font-size: 30px;
+}
+
+.header .text .right {
+    width: 30%;
+}
+.toptext{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+.toptext .left h1{
+font-size: 40px;
+
+}
+.toptext .right{
+    width: 400px;
+}
+.gorseller h1{
+ text-align: center;
+ margin-top: 100px;
+ font-size: 50px;
+}
+.gorseller .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+    padding-top: 100px;
+}
+.gorseller .container .box1{
+    background: url(images/iceri1.jpg) center;
+    background-size: cover;
+    background-repeat: none;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+.gorseller .container .box2{
+    background: url(images/iceri5.jpg) center;
+    background-size: cover;
+    background-repeat: none;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+.gorseller .container .box3{
+    background: url(images/iceri4.jpg) center;
+    background-size: cover;
+    background-repeat: none;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+.bilgi{
+    height: 600px;
+    width: 100%;
+    background: url(images/istanbulwide.jpg) center;
+    background-size: cover;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+.bilgi .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bilgi .container .box{
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin-top: 70px;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.bilgi .container .box i{
+    margin-top: 70px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.bilgi .container .box .text{
+   margin-top: 50px;
+}
+
+
+@media (max-width: 1202px) {
+.toptext{
+    flex-direction: column;
+}
+.gorseller .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.toptext .right p{
+    margin-top: 20px;
+}
+.bilgi{
+    height: 600px;
+}
+.bilgi .container{
+    flex-direction: column;
+    align-items: center;
+}
+.bilgi .container .box{
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;    
+}
+.bilgi .container .box .text{
+    margin: 0;
+    margin-left: 30px;
+}
+.bilgi .container .box .text h1{
+    font-size: 20px;
+}
+.bilgi .container .box .text h5{
+    font-size: 10px;
+    width: 150px;    
+}
+.bilgi .container .box i{
+    font-size: 25px;
+    margin: 10px 10px;
+}
+}
+@media (max-width: 560px) {
+    .gorseller .container .box1{
+        width: 400px;
+        height: 400px;
+    }
+    .gorseller .container .box2{
+        width: 400px;
+        height: 400px;
+    }
+    .gorseller .container .box3{
+        width: 400px;
+        height: 400px;
+    }
+    .toptext .right p{
+        width: 250px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 440px) {
+    .gorseller .container .box1{
+        width: 280px;
+        height: 280px;
+    }
+    .gorseller .container .box2{
+        width: 280px;
+        height: 280px;
+    }
+    .gorseller .container .box3{
+        width: 280px;
+        height: 280px;
+    }
+}

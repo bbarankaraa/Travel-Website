@@ -1,0 +1,131 @@
+.header .top {
+    background-color: #242323;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .top h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.header .top .link .l2 {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.header .top .link .l1 {
+    text-decoration: none;
+    color: #ff6f00;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.header .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+}
+
+.header .text .left {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.header .text .left h1 {
+    font-size: 30px;
+}
+
+.header .text .right {
+    width: 30%;
+}
+.rezervasyon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.rezervasyon .heading{
+    margin-top: 100px;
+    font-size: 50px;
+}
+.rezervasyon .headingp{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rezervasyon .form{
+    margin-top: 50px;
+}
+form{
+    margin: 15px 5px;
+    width: 500px;
+    font-size: 16px;
+    padding: 20px 40px;
+    background-color: #e9e9f1;
+    border: 1px solid #bebed6;
+    margin-bottom: 100px;
+
+}
+form .inputwp{
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+
+}
+form input, form textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+form button{
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+form button:hover{
+    background:green;
+}
+@media (max-width:610px){
+    form{
+        width: 350px;
+    }
+}
+@media (max-width:440px){
+    form{
+        width: 250px;
+    }
+    form label{
+        font-size: 20px;
+    }
+    form button{
+        font-size: 15px;
+    }
+}
+@media (max-width:330px){
+    form{
+        width: 200px;
+    }
+    form label{
+        font-size: 18px;
+    }
+
+}

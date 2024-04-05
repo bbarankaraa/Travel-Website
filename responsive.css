@@ -1,0 +1,165 @@
+@media (max-width: 1202px) {
+    .turlar .content .box img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 1002px) {
+    .turlar .content .box .text h5 {
+        font-size: 35px;
+    }
+
+    .turlar .content .box img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .turlar .content {
+        flex-direction: column;
+    }
+
+    .nedenbiz .image img {
+        display: none;
+    }
+
+    .navbar .container ul {
+        margin-right: 0px;
+    }
+
+    footer .footer .container {
+        flex-direction: column;
+    }
+
+    .hakkinda .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hakkinda .container .text h1 {
+        margin-top: 50px;
+    }
+
+    .hakkinda .container .text button {
+        height: 30px;
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .hakkinda .container .text .container2 .box i {
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
+    .hakkinda .container .text .container2 .box h6 {
+        font-size: 15px;
+    }
+
+    .hakkinda .container .text h5 {
+        width: 50%;
+        margin-left: 100px;
+    }
+    .reviews{
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar .iletisim .box .textlink {
+        display: none;
+    }
+
+    .topbar .sosyalmedya .box .textlink {
+        display: none;
+    }
+
+    .navbar .container ul {
+        display: none;
+    }
+
+    .navbar .bar {
+        display: block;
+        cursor: pointer;
+        font-size: 40px;
+    }
+
+    .navbar .active .close {
+        display: block;
+        cursor: pointer;
+        font-size: 50px;
+        margin-right: 50px;
+    }
+
+    .navbar .active {
+        display: block;
+        position: absolute;
+        top: 165px;
+        width: 50%;
+        height: 100vh;
+        background: rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+    }
+
+    .navbar .active ul {
+        display: block;
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+
+    .navbar .active ul li {
+        margin: 10px 10px;
+        font-size: 30px;
+    }
+
+    .navbar .active ul li a {
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo img {
+        height: 100px;
+    }
+
+    .slider .content h1 {
+        font-size: 50px;
+    }
+
+    .slider .content h3 {
+        font-size: 30px;
+
+    }
+
+    .hakkinda .container .text .container2 .box i {
+        font-size: 15px;
+        margin-left: 150px;
+    }
+
+    .hakkinda .container .text h5 {
+        margin-left: 120px;
+    }
+
+    .nedenbiz .content .heading h1 {
+        font-size: 20px;
+    }
+
+    .nedenbiz .content .heading h5 {
+        font-size: 15px;
+    }
+    .nedenbiz .content .icons {
+
+        margin-left: 20px;
+    }
+    .nedenbiz .content .icons .box h5 {
+        font-size: 15px;
+
+    }
+    .reviews .textbox .heading {
+        font-size: 25px;
+
+    }
+}

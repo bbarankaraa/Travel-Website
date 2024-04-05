@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --maincolor: rgb(221, 146, 8);
+}
+
+/* Topbar Start*/
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--maincolor);
+    height: 55px;
+}
+
+.topbar .iletisim {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.topbar .iletisim .box {
+    margin: 0 10px;
+}
+
+.topbar .iletisim .box a {
+    color: white;
+    font-size: 17px;
+}
+
+.topbar .iletisim .box i {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.topbar .sosyalmedya {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.topbar .sosyalmedya .box {
+    margin: auto;
+}
+
+.topbar .sosyalmedya .box a {
+    color: white;
+}
+
+.topbar .sosyalmedya .box a i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Topbar End */
+
+/* Navbar Start */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 50px -10px rgba(0, 0, 0.75);
+    overflow: hidden;
+    align-items: center;
+}
+
+.navbar .bar {
+    display: none;
+}
+
+.navbar .logo img {
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px 0;
+}
+
+.navbar .container ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 250px;
+
+}
+
+.navbar .container ul li {
+    list-style: none;
+}
+
+.navbar .container ul li a {
+    color: #878686;
+    font-weight: bolder;
+    display: block;
+    font-size: 20px;
+}
+
+.navbar .container ul li a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.50);
+}
+
+.navbar .container .close {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.content {
+    padding: 16px;
+}
+
+/* Navbar End */
+
+/* Slider Start*/
+.slider {
+    background: url(images/banner1.jpg) center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    background-repeat: none;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.slider .content h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-top: 250px;
+    border-radius: 10rem;
+    text-align: center;
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #ffe100;
+}
+
+.slider .content h3 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #ffe100;
+}
+.slider .content .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.slider .content .container .button{
+    background-color: #25D366;
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    }
+    .slider .content .container .button i{
+        font-size: 50px;
+        margin-right: 30px;
+        color: white;
+    }
+    .slider .content .container .button a{
+        font-size: 20px;
+        padding-right: 20px;
+        color: black;
+        text-decoration: none;
+    }
+    
+
+/* Slider End */
+
+/* Hakkinda Start */
+.hakkinda .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.hakkinda .container .logo img {
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.hakkinda .container .logo img:hover {
+    transform: scale(1.2);
+}
+
+.hakkinda .container .text {
+    width: 500px;
+
+}
+
+.hakkinda .container .text h5 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.hakkinda .container .text button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: var(--maincolor);
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transform: scale(1);
+}
+
+.hakkinda .container .text button:hover {
+    background-color: transparent;
+    transform: scale(1.2);
+}
+
+.hakkinda .container .text .container2 .box {
+    display: flex;
+    gap: 5px;
+    padding-top: 20px;
+
+}
+
+.hakkinda .container .text .container2 .box h6 {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.hakkinda .container .text .container2 .box i {
+    font-size: 25px;
+    color: var(--maincolor);
+    margin-right: 10px;
+
+}
+
+/* Hakkinda End */
+/* NedenBiz Start */
+.nedenbiz {
+    display: flex;
+    margin: 150px 50px;
+    background: linear-gradient(#313041, #363636);
+    border-radius: 40px;
+}
+
+.nedenbiz .image img {
+    width: 50vw;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.nedenbiz .content {
+    margin: 40px 15px;
+}
+
+.nedenbiz .content .heading h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: white;
+}
+
+.nedenbiz .content .heading h5 {
+    color: #b6b6b6;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.nedenbiz .content .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.nedenbiz .content .icons .box i {
+    font-size: 40px;
+    color: white;
+}
+
+.nedenbiz .content .icons .box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nedenbiz .content .icons .box h5 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* NedenBiz End */
+/* Turlar Start */
+.turlar {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.turlar .text h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.turlar .text p {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.turlar .content {
+    display: flex;
+    justify-content: center;
+}
+
+.turlar .content .box .text h5 {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.turlar .content .box .text p {
+    width: 300px;
+    margin-bottom: 50px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 15px;
+    
+}
+
+.turlar .content .box img {
+    height: 350px;
+    width: 350px;
+    cursor: pointer;
+    transform: scale(1);
+    border-radius: 5px;
+    margin-top: 50px;
+    margin: 30px;
+}
+
+.turlar .content .box img:hover {
+    transform: scale(1.09);
+}
+
+/* Turlar End */
+/* Reviews Start*/
+.reviews{
+    margin:150px 0;
+}
+.reviews .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.reviews .box img {
+    width: 200px;
+    height: 200px;
+}
+
+.reviews .box .user1 {
+    width: 100px;
+    height: 100px;
+}
+
+.reviews .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+
+}
+
+.reviews .box-container .box p {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+.reviews .box-container .box .user1 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .box-container .box h3 {
+    padding: 10px 0;
+    font-size: 20px;
+
+}
+
+.reviews .textbox {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.reviews .textbox .heading {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+.reviews .box-container .box .stars i {
+    font-size: 15px;
+    color: gold;
+}
+
+/* Reviews  End*/
+/* Footer Start*/
+footer .footer {
+    background: #313041;
+    padding: 6rem 7rem;
+    padding-bottom: 1rem;
+}
+
+footer .footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--green-color);
+    gap: 2rem;
+}
+
+footer .footer .container .detail {
+    max-width: 50rem;
+}
+
+footer .footer .container .detail h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white
+}
+
+footer .footer .container .detail p {
+    line-height: 1.6;
+    color: rgb(255 255 255/80%);
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+}
+
+footer .footer .container .detail h5 {
+    font-size: 30px;
+    font-weight: 400;
+    color: white
+}
+
+
+footer .footer .container .detail a {
+    color: rgb(255 255 255/80%);
+    font-size: 20px;
+    border-bottom: 2px solid #00cee4;
+    display: inline-block;
+}
+
+footer .footer .container .detail a:hover {
+    color: #ffffff;
+}
+
+footer .footer .container .detail .social {
+    display: flex;
+    gap: .8rem;
+    margin-top: 1rem;
+
+}
+
+footer .footer .container .detail .social a {
+    border: none;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+footer .footer .container .detail .social a:hover {
+    color: #9b9b9e;
+}
+
+footer .footer .container h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: white;
+}
+
+footer .footer .container li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer .footer .container a {
+    color: rgb(255 255 255/80%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .footer .container a:hover {
+    color: var(--white-color);
+}
+
+footer .footer .copyright {
+    color: rgb(255 255 255/80%);
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+/* Footer End */

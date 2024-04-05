@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --maincolor: rgb(221, 146, 8);
+}
+
+.header .top {
+    background-color: #242323;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .top h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.header .top .link .l2 {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.header .top .link .l1 {
+    text-decoration: none;
+    color: #ff6f00;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.header .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+}
+
+.header .text .left {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.header .text .left h1 {
+    font-size: 30px;
+}
+
+.header .text .right {
+    width: 30%;
+}
+.harita{
+    padding-bottom: 100px;
+    text-align: center;
+    
+}
+.harita p iframe{
+    width: 80vw;
+    
+}
+
+/* İletişim */
+.bilgiler{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bilgiler .right{
+    padding: 50px;
+}
+.bilgiler .left{
+    padding: 50px;
+}
+.bilgiler .left h1{
+    font-size: 40px;
+}
+.bilgiler .left .container .box{
+    display: flex;
+    margin-top: 20px;
+}
+.bilgiler .left .container .box i{
+    font-size: 40px;
+}
+.bilgiler .left .container .box .bilgi{
+    margin-left: 20px;
+}
+.bilgiler .left .container .box .bilgi h3{
+    font-size: 25px;
+}
+.bilgiler .left .container .box .bilgi p{
+    font-size: 20px;
+    max-width: 350px;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50rem;
+    text-align: center;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color:  var(--maincolor);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.contact-inputs {
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #5f5e5e;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #71706f;
+}
+
+.contact-inputs::placeholder {
+    color: #ffffff;
+}
+
+.contact-left button {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #5f5e5e, #100f0f);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 20px;
+}
+
+@media (max-width:1210px) {
+    .bilgiler{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .bilgiler .left .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bilgiler .left .container .box{
+        margin-top: 50px;
+    } 
+    
+}
+@media (max-width:850px) {
+    .contact-inputs{
+        margin-right:  300px;
+    }
+    .contact-left-title h2{
+        margin-right: 300px;
+    }
+    .contact-left button {
+    margin-right: 300px;
+    }
+    .header .text{
+        flex-direction: column;
+    }
+    .header .text .left {
+        margin-left: 200px;
+    }
+    .header .text .right{
+        margin-top: 50px;
+        width: 300px;
+    }
+}
+@media (max-width:560px) {
+    .contact-inputs{
+        margin-right:  500px;
+        width: 300px;
+    }
+    .contact-left-title h2{
+        margin-right: 500px;
+    }
+    .contact-left button {
+    margin-right: 500px;
+    width: 200px;
+    }
+}
+@media (max-width:370px) {
+    .contact-inputs{
+        margin-right:  580px;
+        width: 250px;
+    }
+    .contact-left-title h2{
+        margin-right: 580px;
+    }
+    .contact-left button {
+    margin-right: 580px;
+    width: 200px;
+    }
+    .header .text .right{
+        margin-top: 50px;
+        width: 250px;
+        margin-right: 100px;
+    }
+    .header .text .left {
+       margin-right: 40px;
+    }
+}
